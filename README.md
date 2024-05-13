@@ -51,18 +51,18 @@ Para realizar el proceso de instalación se puede realizar de dos maneras, las c
 
 #### Proceso automatizado.
 Para comenzar con el proceso automatizado ir al directorio donde se clono el repositorio y ejecutar el fichero intaladorWindows.bat con permisos de administrador. Este script va realizar la descarga, instalación y configuración de la api de Virustotal usados por la aplicación. En este caso, se van a instalar las siguientes versiones y añadirlas al PATH:
-  • Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
-  • NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
-  • SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
+  - Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
+  - NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
+  - SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
 El script continuara ejecutando la actualización del modulo PIP para continuar con la instalación de las dependencias para python usando el fichero requirements.txt y para finalizar se va a abrir una ventana donde va a pedir que se ingrese la api key de Virustotal para poder usar la funcionalidad de obtención de información sobre direcciones IPs.
 
 Una vez realizado exitosamente el proceso anterior para ejecutar la aplicación se tendria que acceder al directorio recoExplorer.py/ y ejecutar el fichero llamado RecoExplorer.bat para lanzar la aplicación.
 
 #### Proceso manual.
 Para comenzar con el proceso manual se van a tener que instalar las siguientes aplicaciones (Las versiones comentadas fueron las usadas para generar la aplicación pero se pueden instalar versiones superiores):
-  • Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
-  • NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
-  • SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
+  - Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
+  - NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
+  - SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
 Una vez instaladas las aplicaciones mencionadas anteriormente procede a acceder a la una consola y dirigirte al directorio donde se clone el repositorio 
 
 `cd {RutaDondeSeClono}/`
