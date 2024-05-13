@@ -72,6 +72,7 @@ Una vez instaladas las aplicaciones mencionadas anteriormente procede a acceder 
 Al esta en la ruta donde se clono el repositorio acceder al directorio app/recoExplorer.py y ejecutar el comando comentado.
 
 `cd app/recoExplorer.py`
+
 `pip install -r requirements.txt` ###puede que pida permisos de adminstrador. Para ello cerrar el cmd y abrir uno nuevo con permisos.
 
 Con las dependencias ya instaladas lo que faltaria para poder ejecutar la aplicación con todas sus funcionalidades, se tiene que añadir el valor de api key de Virustotal dentro del fichero apikey-virustotal.txt o bien ejecutar el siguiente comando para abrir la interfaz grafica y añadir desde ahi el valor de la api key.
