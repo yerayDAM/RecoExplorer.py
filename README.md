@@ -11,33 +11,33 @@ Los resultaddos generados por las herramientas mencionadas anteriormente se van 
 
 RecoExplorer.py es una herramienta desarrollada en python, usando el framework PyQt5 para diseñar e implementar el frontend. Por otro lado, se van a listar las librerias, aplicaciones y endpoints usados por la herramienta y el desarrollo de RecoExplorer.py:
 - Librerias / Aplicaciones:
-  • Qt5 Desinger: editor para el diseño frontend.
-  • PyQt5: Framework usado para generar el frontend.
-  • Python: Lenguaje de programación usado para el desarrollo de la aplicación.
-  • python-nmap: Librería de python con la funcionalidad de interactuar con nmap.
-  • urllib3: Librería de python para acceder y utilizar recursos de internet identificados por url.
-  • Requests: Librería de python para hacer requests HTTP/s.
-  • Beautifulsoup4: Librería de python para realizar parseos de los resultados de las requests HTTP/s.
-  • Pillow: Librería de python para tratar imagenes.
-  • PySide2: Librería de python que hace bindings para el framework PyQt5.
-  • SQLite 3: Sistema de base de datos local.
-  • CSS: Estilos para el frontend usados dentro del editor Qt5 Designer.
-  • Atom / Sublime: Editores de código.
-  • Lucid.app: Herramienta web para generar los diagramas.
+  - Qt5 Desinger: editor para el diseño frontend.
+  - PyQt5: Framework usado para generar el frontend.
+  - Python: Lenguaje de programación usado para el desarrollo de la aplicación.
+  - python-nmap: Librería de python con la funcionalidad de interactuar con nmap.
+  - urllib3: Librería de python para acceder y utilizar recursos de internet identificados por url.
+  - Requests: Librería de python para hacer requests HTTP/s.
+  - Beautifulsoup4: Librería de python para realizar parseos de los resultados de las requests HTTP/s.
+  - Pillow: Librería de python para tratar imagenes.
+  - PySide2: Librería de python que hace bindings para el framework PyQt5.
+  - SQLite 3: Sistema de base de datos local.
+  - CSS: Estilos para el frontend usados dentro del editor Qt5 Designer.
+  - Atom / Sublime: Editores de código.
+  - Lucid.app: Herramienta web para generar los diagramas.
 
 - Endpoints  
   - Direcciones ips  
-	  • https://www.virustotal.com/api/v3/ip_addresses/{ip}  
+	 - https://www.virustotal.com/api/v3/ip_addresses/{ip}  
   - Subdominios  
-	  • https://crt.sh/?q={domain}&output=json  
-	  • https://api.hackertarget.com/hostsearch/?q={domain}  
-	  • https://rapiddns.io/subdomain/{domain}#result  
-	  • https://otx.alienvault.com/api/v1/indicators/domain/{domain}/passive_dns  
-	  • https://urlscan.io/api/v1/search/?q={domain}  
-	  • https://riddler.io/search/exportcsv?q=pld:{domain}  
-	  • https://api.threatminer.org/v2/domain.php?q={domain}&rt=5  
-	  • https://dnsdumpster.com/  
-	  • https://dnsdumpster.com/static/map/{domain}.png  
+	- https://crt.sh/?q={domain}&output=json  
+	- https://api.hackertarget.com/hostsearch/?q={domain}  
+	- https://rapiddns.io/subdomain/{domain}#result  
+	- https://otx.alienvault.com/api/v1/indicators/domain/{domain}/passive_dns  
+	- https://urlscan.io/api/v1/search/?q={domain}  
+	- https://riddler.io/search/exportcsv?q=pld:{domain}  
+	- https://api.threatminer.org/v2/domain.php?q={domain}&rt=5  
+	- https://dnsdumpster.com/  
+	- https://dnsdumpster.com/static/map/{domain}.png  
 ---
 ## Proceso de instalación
 Para comenzar con el proceso de instalación se va a clonar el repositorio.
