@@ -64,6 +64,7 @@ Para comenzar con el proceso manual se van a tener que instalar las siguientes a
   - Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
   - NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
   - SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
+  - 
 Una vez instaladas las aplicaciones mencionadas anteriormente procede a acceder a la una consola y dirigirte al directorio donde se clone el repositorio 
 
 `cd {RutaDondeSeClono}/`
