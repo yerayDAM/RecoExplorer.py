@@ -25,19 +25,19 @@ RecoExplorer.py es una herramienta desarrollada en python, usando el framework P
   • Atom / Sublime: Editores de código.
   • Lucid.app: Herramienta web para generar los diagramas.
 
-- Endpoints
-  - Direcciones ips
-	  • https://www.virustotal.com/api/v3/ip_addresses/{ip}
-  - Subdominios
-	  • https://crt.sh/?q={domain}&output=json
-	  • https://api.hackertarget.com/hostsearch/?q={domain}
-	  • https://rapiddns.io/subdomain/{domain}#result
-	  • https://otx.alienvault.com/api/v1/indicators/domain/{domain}/passive_dns
-	  • https://urlscan.io/api/v1/search/?q={domain}
-	  • https://riddler.io/search/exportcsv?q=pld:{domain}
-	  • https://api.threatminer.org/v2/domain.php?q={domain}&rt=5
-	  • https://dnsdumpster.com/
-	  • https://dnsdumpster.com/static/map/{domain}.png
+- Endpoints  
+  - Direcciones ips  
+	  • https://www.virustotal.com/api/v3/ip_addresses/{ip}  
+  - Subdominios  
+	  • https://crt.sh/?q={domain}&output=json  
+	  • https://api.hackertarget.com/hostsearch/?q={domain}  
+	  • https://rapiddns.io/subdomain/{domain}#result  
+	  • https://otx.alienvault.com/api/v1/indicators/domain/{domain}/passive_dns  
+	  • https://urlscan.io/api/v1/search/?q={domain}  
+	  • https://riddler.io/search/exportcsv?q=pld:{domain}  
+	  • https://api.threatminer.org/v2/domain.php?q={domain}&rt=5  
+	  • https://dnsdumpster.com/  
+	  • https://dnsdumpster.com/static/map/{domain}.png  
 ---
 ## Proceso de instalación
 Para comenzar con el proceso de instalación se va a clonar el repositorio.
