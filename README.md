@@ -54,6 +54,7 @@ Para comenzar con el proceso automatizado ir al directorio donde se clono el rep
   - Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
   - NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
   - SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
+
 El script continuara ejecutando la actualización del modulo PIP para continuar con la instalación de las dependencias para python usando el fichero requirements.txt y para finalizar se va a abrir una ventana donde va a pedir que se ingrese la api key de Virustotal para poder usar la funcionalidad de obtención de información sobre direcciones IPs.
 
 Una vez realizado exitosamente el proceso anterior para ejecutar la aplicación se tendria que acceder al directorio recoExplorer.py/ y ejecutar el fichero llamado RecoExplorer.bat para lanzar la aplicación.
