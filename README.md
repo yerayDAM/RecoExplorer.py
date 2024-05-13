@@ -39,17 +39,17 @@ RecoExplorer.py es una herramienta desarrollada en python, usando el framework P
 	  • https://dnsdumpster.com/
 	  • https://dnsdumpster.com/static/map/{domain}.png
 ---
-##Proceso de instalación
+## Proceso de instalación
 Para comenzar con el proceso de instalación se va a clonar el repositorio.
 
 git clone https://github.com/yerayDAM/RecoExplorer.py
 
 Una vez clonado el repositorio dependiendo del sistema operativo usado se va a seguir unos pasos u otros. Primero se va a mostrar el procesos de instalación en Windows.
 
-###Sistema operativo Windows:
+### Sistema operativo Windows:
 Para realizar el proceso de instalación se puede realizar de dos maneras, las cuales se van a detallar a continuación:
 
-####Proceso automatizado.
+#### Proceso automatizado.
 Para comenzar con el proceso automatizado ir al directorio donde se clono el repositorio y ejecutar el fichero intaladorWindows.bat con permisos de administrador. Este script va realizar la descarga, instalación y configuración de la api de Virustotal usados por la aplicación. En este caso, se van a instalar las siguientes versiones y añadirlas al PATH:
   • Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
   • NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
@@ -58,7 +58,7 @@ El script continuara ejecutando la actualización del modulo PIP para continuar 
 
 Una vez realizado exitosamente el proceso anterior para ejecutar la aplicación se tendria que acceder al directorio recoExplorer.py/ y ejecutar el fichero llamado RecoExplorer.bat para lanzar la aplicación.
 
-####Proceso manual.
+#### Proceso manual.
 Para comenzar con el proceso manual se van a tener que instalar las siguientes aplicaciones (Las versiones comentadas fueron las usadas para generar la aplicación pero se pueden instalar versiones superiores):
   • Python versión 3.10.2 (https://www.python.org/downloads/release/python-3102/).
   • NMAP versión 7.91 (https://nmap.org/dist/nmap-7.91-setup.exe).
@@ -82,15 +82,15 @@ python main.py
 
 ---
 
-###Funcionamiento de la aplicación
+### Funcionamiento de la aplicación
 Dentro de este apartado se va a comentar el funcionamiento de cada una de las herramientas integradas dentro de la interfaz.
 
-####Vista pricipal.
+#### Vista pricipal.
 En la vista pricipal se van a mostrar varios botones los cuales te moveran a la vista de las diferentes herramientas.
 
-####Vista de obtención de información de direcciones IPs
+#### Vista de obtención de información de direcciones IPs
 En esta vista se encuentran agrupadas dos funcionalidades. la primera una petición a la api de Virustotal para obtener información acerca de ip introducida y tambien la funcionalidad de realizar escaneos de puertos de los primeros 1024 puertos usando NMAP. Ambos resultados se van a almacenar dentro de la base de datos para poder ser consultados cuando sean necesarios.
 
-####Vista de obtención de subdominios.
+#### Vista de obtención de subdominios.
 
 
