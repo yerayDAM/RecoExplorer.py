@@ -42,7 +42,7 @@ RecoExplorer.py es una herramienta desarrollada en python, usando el framework P
 ## Proceso de instalación
 Para comenzar con el proceso de instalación se va a clonar el repositorio.
 
-git clone https://github.com/yerayDAM/RecoExplorer.py
+'git clone https://github.com/yerayDAM/RecoExplorer.py'
 
 Una vez clonado el repositorio dependiendo del sistema operativo usado se va a seguir unos pasos u otros. Primero se va a mostrar el procesos de instalación en Windows.
 
@@ -65,20 +65,20 @@ Para comenzar con el proceso manual se van a tener que instalar las siguientes a
   • SQLite3 (https://www.sqlite.org/2024/sqlite-tools-win32-x86-3360000.zip).
 Una vez instaladas las aplicaciones mencionadas anteriormente procede a acceder a la una consola y dirigirte al directorio donde se clone el repositorio 
 
-cd {RutaDondeSeClono}/
+`cd {RutaDondeSeClono}/`
 
 Al esta en la ruta donde se clono el repositorio acceder al directorio app/recoExplorer.py y ejecutar el comando comentado.
 
-cd app/recoExplorer.py
-pip install -r requirements.txt ###puede que pida permisos de adminstrador. Para ello cerrar el cmd y abrir uno nuevo con permisos.
+'cd app/recoExplorer.py'
+'pip install -r requirements.txt' ###puede que pida permisos de adminstrador. Para ello cerrar el cmd y abrir uno nuevo con permisos.
 
 Con las dependencias ya instaladas lo que faltaria para poder ejecutar la aplicación con todas sus funcionalidades, se tiene que añadir el valor de api key de Virustotal dentro del fichero apikey-virustotal.txt o bien ejecutar el siguiente comando para abrir la interfaz grafica y añadir desde ahi el valor de la api key.
 
-python main-GetApi.py
+'python main-GetApi.py'
 
 Ya estaria listo el entorno para poder usar la apliación, solo bastaria con ejecutar el fichero RecoExplorer.bat o desde consola estando dentro de la ruta {rutaDondeSeClono}/app/recoExplorer.py ejecutar el script principal.
 
-python main.py
+'python main.py'
 
 ---
 
