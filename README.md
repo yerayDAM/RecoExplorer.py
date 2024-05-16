@@ -90,23 +90,35 @@ Dentro de este apartado se va a comentar el funcionamiento de cada una de las he
 
 #### Vista pricipal.
 En la vista pricipal se van a mostrar varios botones los cuales te moveran a la vista de las diferentes herramientas.
+![image](https://github.com/yerayDAM/RecoExplorer.py/assets/167007108/8b92295a-dac2-4cfa-8af5-47d2d0868577)
 
 #### Vista de obtención de información de direcciones IPs
 En esta vista se encuentran agrupadas dos funcionalidades. la primera una petición a la api de Virustotal para obtener información acerca de ip introducida y tambien la funcionalidad de realizar escaneos de puertos de los primeros 1024 puertos usando NMAP. Ambos resultados se van a almacenar dentro de la base de datos para poder ser consultados cuando sean necesarios.
+![image](https://github.com/yerayDAM/RecoExplorer.py/assets/167007108/b8830e90-5992-42d4-9ebc-877b9ec1bfe3)
+
 
 #### Vista de obtención de subdominios.
 En esta vista se va a realizar la obtención de subdominios haciendo peticiones hacia los endpoints publicos mencionados anteriormente los cuales iran devolviendo los subdominios relacionados con el dominio consultado, una vez finalizadas las consultas se generar una imagen de un mapa de dominio sobre el dominio introducido esta imagen se almacenara dentro del directorio app/recoExplorer.py/DnsDums y una version re escalada dentro el directorio app/recoExplorer.py/resize-dnsdumstep. Para poder ejecutar correctamente el funcionamento de esta vista lo unico que se va a tener que añadir sera un dominio, por ejemplo: yeray.com test.com poc.com
+![image](https://github.com/yerayDAM/RecoExplorer.py/assets/167007108/f88e413a-af0b-4f0a-a55f-eeea6d7b70a7)
+
+
 
 #### Vista de escaneo de directorios.
 En esta vista se va a realizar un escaneo de directorios en base a un diccionario seleccionado por el usuario estos diccionarios se deben almacenar dentro del directorio app/recoExplorer.py/dicc para poder ser encontrados por la aplicación. En esta vista se va a pedir al usuario que añada una url completa sobre la cual quiera realizar el escaneo de directorios(Añadir url sin la ultima barra). Ejemplos: https://test.com http://yerayTest.com/es
+![image](https://github.com/yerayDAM/RecoExplorer.py/assets/167007108/86d92176-9801-4227-b6cc-1259d51c69c2)
+
 
 #### Vista de Webcrawling.
 Esta seria la vista de la ultima herramienta en esta caso es la del webcrawling. Se van a obtener todos los enlaces que pertenecen dentro de una URL proporcionada por el usuario, para que funcione correctamente se va a tener que introducir la URL completa.
+![image](https://github.com/yerayDAM/RecoExplorer.py/assets/167007108/2fde4cc0-a08f-4f7a-b2f7-9d890909a3d0)
+
 
 #### Vista de resultados generados.
 Para finalizar las vistas con las que cuenta la aplicación, se va a comentar sobre la vistar de los resultados. Aqui se se muestra un TabWidget el cual tiene una ventana por cada herramienta y una para las ultimas ejecuciones realizadas. Los datos se van a obtener de las base de datos donde se iran guaradando los resultados de las diferentes herramientas para ser consultados aqui. A continuación se comentaran las ventanas del TabWidget:
+![image](https://github.com/yerayDAM/RecoExplorer.py/assets/167007108/8a28357b-c725-4b71-a6af-e9c1309b85a9)
 
-	- Consultas Ultimas Ejecuciones: Esta ventana cuenta con varios filtros para ver las ultimas ejecuciones segun el tipo de herramienta o si se quieren ver todos las las ejecuciones. Por otro lado cuenta con una caja de texto la cual se puede dejar vacia y se mostran todos los resultados sin ningun filtro y se añade algun dato se podra ir buscando el valor con una condición like es decir que se podria introducir una "i" y aparecerian los resultados intelequia.com tenerife.es..
+
+	- Consultas Ultimas Ejecuciones: Esta ventana cuenta con varios filtros para ver las ultimas ejecuciones segun el tipo de herramienta o si se quieren ver todos las las ejecuciones. Por otro lado cuenta con una caja de texto la cual se puede dejar vacia y se mostran todos los resultados sin ningun filtro y se añade algun dato se podra ir buscando el valor con una condición like es decir que se podria introducir una "i" y aparecerian los resultados intelequia.com tenerife.es.
  	- Consultas direciones IPs: En esta ventana se muestan los resultados de las ejecuciones de la herramienta de direciones IP. Si no se introduce nada dentro del campo de texto se mostran todos los resultados si deseas buscar un valor debes introducir el valor exacto para extrar la demas información.
   	- Consultas subdomnios: En esta ventana se muestan los resultados de las ejecuciones de la herramienta de subdominios. El funcionamiento del campo de texto es el mismo para todas las consultas de resultados de las herramientas.
 	- Consultas escaneos de directorios: En esta ventana se muestan los resultados de las ejecuciones de la herramienta de escaneo de directorios.
