@@ -93,9 +93,9 @@ cd /d "%~dp0"
 
 REM Ejecutar el script de Python desde el directorio actual
 if %PYTHON_INSTALLED% neq 0 ( 
-    python3 recoExplorer.py\mainGetApi.py
+    python3 recoExplorer.py\app\mainGetApi.py
 ) else (
-    python recoExplorer.py\mainGetApi.py
+    python recoExplorer.py\app\mainGetApi.py
 )
 
 echo Instalacion completada.
