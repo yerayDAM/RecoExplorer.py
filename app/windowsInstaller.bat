@@ -12,7 +12,7 @@ set PYTHON3_INSTALLED=%errorlevel%
 
 if %PYTHON_INSTALLED% neq 0 if %PYTHON3_INSTALLED% neq 0 (
     echo Descargando Python 3 para arquitectura %ARCHITECTURE%...
-    curl -o python-installer.exe https://www.python.org/ftp/python/3.10.2/python-3.10.2-%ARCHITECTURE%.exe
+    curl -o python-installer.exe https://www.python.org/ftp/python/3.10.11/python-3.10.11-%ARCHITECTURE%.exe
 
     echo Instalando Python 3...
     python-installer.exe /quiet InstallAllUsers=1 PrependPath=1
@@ -37,7 +37,7 @@ if %errorlevel% neq 0 (
     curl -o nmap-installer.exe https://nmap.org/dist/nmap-7.91-setup.exe
 
     echo Instalando Nmap...
-    nmap-installer.exe /S
+    nmap-installer.exe
 
     REM Limpiando
     del nmap-installer.exe
