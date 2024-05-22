@@ -32,7 +32,7 @@ class myMainWindow(object):
             return
 
         # Guardar la API key en un archivo
-        file_path = "recoExplore.py/apikey-virustotal.txt"
+        file_path = "recoExplorer.py/apikey-virustotal.txt"
         with open(file_path, "w") as f:
             f.write(api_key)
             self.cerrar_aplicacion()
