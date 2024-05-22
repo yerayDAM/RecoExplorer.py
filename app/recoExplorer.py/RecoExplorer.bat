@@ -1,24 +1,24 @@
 @echo off
 
-REM Comprobar si python o python3 está disponible
-where python >nul 2>&1
-if %errorlevel% equ 0 (
-    set PYTHON_CMD=python
+REM Comprobando si Python o Python3 ya están instalados
+python --version >nul 2>&1
+set PYTHON_INSTALLED=%errorlevel%
+python3 --version >nul 2>&1
+set PYTHON3_INSTALLED=%errorlevel%
+
+REM Cambiar al directorio desde donde se ejecutó el script
+cd /d "%~dp0"
+
+REM Ejecutar el script de Python desde el directorio actual
+if %PYTHON_INSTALLED% neq 0 ( 
+    python3 recoExplorer.py\mainGetApi.py
 ) else (
-    where python3 >nul 2>&1
-    if %errorlevel% equ 0 (
-        set PYTHON_CMD=python3
-    ) else (
-        echo No se encontró python ni python3 en el PATH
-        exit /b 1
-    )
+    python recoExplorer.py\mainGetApi.py
 )
 
-REM Ejecutar el script de Python en segundo plano sin abrir una nueva ventana
-start /B %PYTHON_CMD% main.py
 
 REM Obtener el ID del proceso de Python
-for /f "tokens=2" %%I in ('tasklist /fi "imagename eq %PYTHON_CMD%.exe" /fo table /nh') do (
+for /f "tokens=2" %%I in ('tasklist /fi "imagename eq python3.exe" /fo table /nh') do (
     set "PID=%%I"
 )
 
